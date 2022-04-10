@@ -2,7 +2,7 @@
 - javascript로 시계, 할일 목록, 날씨를 구현한 웹 홈페이지
 
 1️⃣ 실행
-https://dorimoribebe.github.io/chrome_home/
+https://summerydev.github.io/chrome-home/
 
 2️⃣ 사용
 vanilla JS

@@ -1,0 +1,191 @@
+body {
+  color: white;
+  overflow: hidden;
+  height: 100%;
+}
+
+body* {
+  touch-action: none;
+}
+
+.hidden {
+  display: none;
+  visibility: hidden;
+}
+
+#login-form {
+  float: right;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  margin: 0px;
+}
+
+#logout-form {
+  position: fixed;
+  right: 10px;
+}
+
+#clock {
+  clear: both;
+  position: relative;
+  top: 50px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 6em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px;
+}
+
+#greeting {
+  position: relative;
+  top: 20px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#weather {
+  position: relative;
+  top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+}
+#todo-form {
+  position: relative;
+  top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-box {
+  display: flex;
+  width: 300px;
+  height: 30px;
+  background-color: transparent;
+  border: solid white 1px;
+  border-radius: 20px;
+  color: white;
+  outline: none;
+  text-align: center;
+}
+
+.login {
+  width: 150px;
+}
+
+.button {
+  height: 30px;
+  border: solid white 1px;
+  border-radius: 20px;
+}
+
+.button:hover {
+  background-color: rgb(189, 189, 189);
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.button-toDo {
+  background-color: transparent;
+  border: none;
+  font-size: 1.2em;
+  color: white;
+  padding-left: 20px;
+}
+
+.button-toDo:hover {
+  color: rgb(199, 155, 155);
+  cursor: pointer;
+}
+
+#todo-list {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  flex-wrap: wrap;
+  position: relative;
+  top: 50px;
+  width: 50%;
+  height: 300px;
+  margin-left: 30%;
+}
+
+/* input[type="checkbox"] {
+  display:none;
+  cursor: pointer;
+}
+
+input[id="chb"] + label {
+	display: inline-flex;
+	width: 10px;
+	height: 10px;
+	border: 2px solid #ffffff;
+	cursor: pointer;
+  margin-right: 10px;
+}
+
+input[id="chb"]:checked + label ::before{
+	background-color: #643e3e;
+} */
+
+#todo-list > p {
+  justify-content: space-between;
+  padding: 0px;
+  margin: 5px;
+}
+
+.bgimg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  animation: fadeIn 0.5s linear;
+  object-fit: cover;
+}
+
+#quote {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: fixed;
+  bottom: 20px;
+  font-weight: lighter;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: 5% auto;
+}
+
+#quote > span {
+  text-align: center;
+  flex-shrink: 0;
+}
+
+@media (max-width: 960px) {
+  #clock {
+    font-size: 5em;
+  }
+  #greeting {
+    font-size: 1.7em;
+  }
+}
+
+@media (max-width: 768px) {
+  #clock {
+    font-size: 3.5em;
+  }
+  #greeting {
+    font-size: 1.7em;
+  }
+}
